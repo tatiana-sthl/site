@@ -1,0 +1,122 @@
+.contactTitle {
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 4vw;
+    color: rgb(253, 232, 237);
+    margin: 0 3vw 0 2vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.arrowContact {
+    color: rgb(253, 232, 237);
+}
+
+.arrowContactRight {
+    color: rgb(16, 16, 16);
+}
+
+.contactMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contactUl {
+    display: flex;
+    margin: 2vw 2vw 0 0;
+}
+
+.contactLi {
+    list-style: none;
+}
+
+.aContact {
+    background-color: rgb(253, 232, 237);
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    transition: all 500ms ease;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.iconContact {
+    background-color: transparent;
+    color: rgb(16, 16, 16);
+    font-size: 4em;
+}
+
+.aContact::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 500ms ease-in;
+}
+
+.aContact.one:hover::after {
+    background-color:#9c1515;
+    top: 0;
+}
+
+.aContact.two:hover::after {
+    background-color:#333;
+    top: 0;
+}
+
+.aContact.three:hover::after {
+    background-color:#1D9BF0;
+    top: 0;
+}
+
+.aContact.four:hover::after {
+    background-color:#0072b1;
+    top: 0;
+}
+
+.aContact:hover {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.aContact:hover .iconContact {
+    color: #fff;
+    z-index: 2;
+}
+
+/*mobile responsive*/
+
+@media (max-width: 1270px) {
+    .contactTitle {
+        font-size: 30px;
+    }
+
+    .arrowContact {
+        width: 100%;
+    }
+
+    .contactUl {
+        display: block;
+        margin: 0;
+    }
+
+    .aContact {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+}

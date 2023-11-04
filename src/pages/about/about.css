@@ -1,0 +1,216 @@
+.aboutme {
+    margin: 5vw 10vw;
+    column-count: 2;
+    column-gap: 2vw;
+}
+
+.aboutme p {
+    margin: 0;
+    text-align: justify;
+    color: rgb(253, 232, 237);
+    font-family: 'Exo 2', sans-serif;  
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
+.arrowPortfolio {
+  color: rgb(253, 232, 237);
+}
+
+.arrowPortfolioRight {
+  color: rgb(16, 16, 16);
+}
+
+.aboutH2 {
+  text-align: center;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+}
+
+.iconStack {
+  font-size: 3.5vw;
+}
+
+
+.ulAbout {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ulAbout::before {
+  content: attr(data-alt);
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  top: 5vw;
+  left: 2vw;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Exo 2', sans-serif;  
+  font-size: 1.2vw;
+}
+
+.ulAbout:hover::before {
+  opacity: 1;
+}
+
+.ulAbout li {
+    position: relative;
+    list-style: none;
+    width: 4vw;
+    height: 4vw;
+    margin: 0 2vw;
+    transform: rotate(-30deg) skew(25deg);
+  }
+  
+  .ulAbout li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: teal;
+    transition: 0.5s;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+  }
+
+  .ulAbout li span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+  }
+
+.ulAbout:nth-child(1) li span {
+  background-color: #f16428;
+}
+
+.ulAbout:nth-child(2) li span {
+  background-color: #2965f1;
+}
+
+.ulAbout:nth-child(3) li span {
+  background-color: #f7df1e;
+}
+
+.ulAbout:nth-child(4) li span {
+  background-color: #6181b6;
+}
+
+.ulAbout:nth-child(5) li span {
+  background-color: #563c7c;
+}
+
+.ulAbout:nth-child(6) li span {
+  background-color: #09cf83;
+}
+
+.ulAbout:nth-child(7) li span {
+  background-color: #207196;
+}
+
+.ulAbout:nth-child(8) li span {
+  background-color: #00d9ff;
+}
+
+.ulAbout:nth-child(9) li span {
+  background-color: #ff6c37;
+}
+
+.ulAbout:nth-child(10) li span {
+  background-color: #13aa52;
+}
+
+.ulAbout:nth-child(11) li span {
+  background-color: #3a94cf;
+}
+
+.ulAbout li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.ulAbout li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+
+.ulAbout li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+
+.ulAbout li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+
+.ulAbout li:hover span:nth-child(1) {
+  transform: translate(0, 0);
+  opacity: 0.2;
+}
+
+
+/*mobile responsive*/
+
+@media (max-width: 1270px) {
+  .portfolioH1 {
+    font-size: 40px;
+  }
+
+  .aboutme {
+    column-count: auto;
+  }
+
+  .aboutme p {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+
+  .aboutH2 {
+    font-size: 30px;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 0 1vw;
+  }
+
+  .ulAbout li {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    transform: none;
+  }
+
+  .ulAbout li span {
+    border-radius: 5px;
+  }
+
+  .iconStack {
+    font-size: 2.8rem;
+  }
+
+  
+}
+
+

@@ -1,0 +1,92 @@
+.portfolioH1 {
+    margin: 1vw 0 2vw 0;
+}
+
+.portfolioTitle {
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 4vw;
+    color: rgb(253, 232, 237);
+    margin: 0 3vw 0 2vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.portfolioH2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.portfolioH2 div h2 {
+    margin : 1vw 0 0.7vw 0;
+}
+
+/* button detail */
+
+
+.detailPortfolio {
+    text-decoration: none;
+    position: relative;
+    padding: 0.5vw;
+    transition: all .2s ease;
+}
+
+.detailPortfolio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #907f71;
+    width: 2vw;
+    height: 2vw;
+    transition: all .3s ease;
+}
+
+.spanDetailPortfolio {
+    position: relative;
+    font-family: 'Exo 2', sans-serif; 
+    color: rgb(253, 232, 237);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+.detailPortfolio:hover::before {
+    width: 100%;
+    background: #757575;
+}
+
+.detailPortfolio:active {
+    transform: scale(.96);
+}
+
+/* mobile responsive */
+
+@media (max-width:1270px) {
+    .portfolioH2 {
+        display: block;
+    }    
+
+    .projectH2 {
+        font-size: 30px;
+        margin-top: 10vw!important;
+    }
+
+    .portfolioH1 {
+        font-size: 55px;
+    }
+
+    .spanDetailPortfolio {
+        font-size: 13px;
+    }
+
+    .detailPortfolio::before {
+        display: none;
+    }
+}
+

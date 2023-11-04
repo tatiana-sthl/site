@@ -1,0 +1,102 @@
+.slider {
+  width: 33vw;
+  margin: 2vw 0;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1vw 0;
+}
+  
+.slide.active {
+  display: flex;
+}
+  
+.slide img {
+  max-height: 15vw;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+  
+.slide p {
+  margin: 1vw;
+  text-align: justify;
+  color: rgb(253, 232, 237);
+  font-family: 'Exo 2', sans-serif;  
+  font-size: 1vw;
+}
+
+.sliderControlsLeft {
+  transition: right 0.5s ease;
+}
+
+.sliderControlsRight {
+  transition: left 0.5s ease;
+}
+  
+.slider-controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 2vw;
+  color: #907f71;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-controls button:hover {
+  color: #757575;
+}
+  
+
+/* Styles de la boîte modale */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Styles de l'image en plein écran */
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+}
+
+/* mobile responsive */
+
+@media (max-width:1270px) {
+  .slider {
+    width: auto;
+  }
+
+  .slide img {
+    max-height: none;
+    width: 95%;
+  }
+
+  .slide p {
+    font-size: 3vw;
+    margin: 2vw;
+  }
+
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-controls button {
+    font-size: 5vw;
+  }
+}
